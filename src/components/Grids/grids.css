@@ -1,0 +1,84 @@
+.grid-personagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+.heroi-moldura {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    aspect-ratio: 3 / 4;
+    margin: 0 auto;
+    
+}
+
+.heroi-imagem {
+    position: absolute;
+    width: 70%;
+    height: 87%;
+    object-fit: contain;
+    bottom: 5%;
+    left: 16%;
+    z-index: 3;
+}
+
+.molduraheroi-imagem {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 2;
+    pointer-events: none;
+    border-radius: 20px;
+}
+
+.heroi-card h2 {
+    color: #d4af37;
+    font-family: "Pixelify Sans", monospace;
+    margin-top: 12px;
+}
+
+
+
+.vilao-moldura {
+    position: relative;
+    width: 100%;
+    max-width: 270px;
+    aspect-ratio: 3 / 4;
+    margin: 0 auto;
+    
+}
+
+.vilao-imagem {
+    position: absolute;
+    width: 60%;
+    height: 89%;
+    object-fit: contain;
+    bottom: 5%;
+    left: 19%;
+    z-index: 3;
+}
+
+.molduravilao-imagem {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 2;
+    border-radius: 20px;
+}
+
+.vilao-card h2 {
+    color: #d4af37;
+    font-family: "Pixelify Sans", monospace;
+    margin-top: 12px;
+}
