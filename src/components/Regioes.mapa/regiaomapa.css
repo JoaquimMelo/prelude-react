@@ -1,0 +1,145 @@
+/* Apresentação de uma região */
+
+.regiao,
+.regiao * {
+  box-sizing: border-box;
+  color: inherit;
+}
+
+.regiao {
+  padding: 24px;
+  border: 2px solid #79502c;
+  background: linear-gradient(135deg, #382719, #24190f);
+  color: #e8d5a3;
+  box-shadow: 0 6px 0 #160e09;
+}
+
+.regiao__cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.regiao__titulo {
+  margin: 0 0 12px;
+  color: #d4af37;
+  font-size: 30px;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.regiao__descricao {
+  max-width: 70ch;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.regiao__selo {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 10px 14px;
+  border: 2px solid #79502c;
+  background-color: #d2b477;
+  color: #49301b;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* Trilha e campo de batalha */
+
+.regiao__mapas {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.regiao__mapa {
+  min-width: 0;
+  margin: 0;
+  padding: 16px;
+  border: 1px solid #79502c;
+  background-color: #1c1410;
+}
+
+.regiao__mapa-titulo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 8px;
+  color: #f4df9d;
+  font-size: 22px;
+}
+
+.regiao__numero {
+  color: #d4af37;
+  font-size: 18px;
+}
+
+.regiao__mapa-subtitulo {
+  margin: 0 0 16px;
+  font-size: 16px;
+}
+
+.regiao__imagem {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid #79502c;
+  image-rendering: pixelated;
+}
+
+.regiao__legenda {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Mecânica da região */
+
+.regiao__mecanica {
+  margin-top: 24px;
+  padding: 20px;
+  border-left: 4px solid #d4af37;
+  background-color: #4a2c19;
+}
+
+.regiao__mecanica-titulo {
+  margin: 0 0 10px;
+  color: #f4df9d;
+  font-size: 22px;
+}
+
+.regiao__mecanica-texto {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+  .regiao {
+    padding: 16px;
+  }
+
+  .regiao__cabecalho {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .regiao__titulo {
+    font-size: 26px;
+  }
+
+  .regiao__mapas {
+    grid-template-columns: 1fr;
+  }
+
+  .regiao__mapa {
+    padding: 12px;
+  }
+
+  .regiao__mecanica {
+    padding: 16px;
+  }
+}

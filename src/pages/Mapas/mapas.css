@@ -1,0 +1,108 @@
+/* Página e componentes compartilhados */
+
+.pagina-mapas {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pagina-mapas .footer-links {
+  flex-wrap: wrap;
+  gap: 20px 40px;
+}
+
+.mapas,
+.mapas * {
+  box-sizing: border-box;
+}
+
+.mapas {
+  flex: 1;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 24px 64px;
+  color: #e8d5a3;
+}
+
+/* Introdução */
+
+.mapas__introducao {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.mapas__titulo {
+  margin: 0 0 8px;
+  font-size: 40px;
+  color: #d4af37;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.mapas__subtitulo {
+  margin: 0;
+  font-size: 20px;
+  color: #e8d5a3;
+}
+
+/* Botões de seleção das regiões */
+
+.atlas__abas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.atlas__aba {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px;
+  border: 3px solid #79502c;
+  background: linear-gradient(180deg, #ead7a0, #b89457);
+  color: #49301b;
+  font: inherit;
+  text-align: center;
+  cursor: pointer;
+}
+
+.atlas__aba:hover {
+  filter: brightness(1.1);
+}
+
+.atlas__aba-numero,
+.atlas__aba-nome {
+  color: inherit;
+}
+
+.atlas__aba-numero {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.atlas__aba-nome {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.atlas__aba--ativa {
+  border-color: #d4af37;
+  background: #4a2c19;
+  color: #f4df9d;
+}
+
+.atlas__aba:focus-visible {
+  outline: 3px solid #f4df9d;
+  outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+  .mapas {
+    padding: 32px 16px 48px;
+  }
+
+  .atlas__abas {
+    grid-template-columns: 1fr;
+  }
+}
