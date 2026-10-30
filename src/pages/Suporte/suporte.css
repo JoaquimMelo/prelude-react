@@ -1,0 +1,26 @@
+.suporte-container {
+    width: 100%;
+    padding: 40px 20px;
+    padding-top: 150px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.suporte-titulo {
+    font-size: 40px;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.suporte-texto {
+    font-size: 18px;
+    color: #d4af37;
+    margin: 0 0 40px;
+}
+
+.suporte-contatos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
