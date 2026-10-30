@@ -1,0 +1,48 @@
+.link-imagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 220px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    background: rgba(78, 38, 0, 0.6);
+    border: 4px solid #79502c;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.link-imagem:hover {
+    transform: translateY(-4px);
+    filter: brightness(1.15);
+}
+
+.link-imagem:active {
+    transform: translateY(2px);
+}
+
+.link-imagem:focus-visible {
+    outline: 3px solid #fff0a0;
+    outline-offset: 4px;
+}
+
+.link-imagem-icone {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.6));
+}
+
+.link-imagem-nome {
+    color: #d4af37;
+    font-size: 22px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+.link-imagem-descricao {
+    color: #d4af37;
+    font-size: 14px;
+    opacity: 0.8;
+    text-align: center;
+}

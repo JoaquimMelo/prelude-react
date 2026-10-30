@@ -1,0 +1,14 @@
+.herois-container {
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.herois-titulo {
+    font-family: "Pixelify Sans", monospace;
+    font-size: 40px;
+    color: #d4af37;
+    margin-bottom: 30px;
+}
