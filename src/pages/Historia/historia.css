@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+
+.historia {
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  background: #1f1510;
+  display: flex;
+  justify-content: center;
+}
+
+.historia__pergaminho {
+  width: 100%;
+  max-width: 960px;
+  padding: 3rem 2.5rem;
+  background: radial-gradient(ellipse at center, #f3e2b3 0%, #e7cf98 60%, #d2b177 100%);
+  color: #3a2616;
+  border: 6px double #8a5a24;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7), inset 0 0 60px rgba(120, 80, 30, 0.35);
+  font-family: 'IM Fell English', Georgia, serif;
+}
+
+.historia__cabecalho {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #b8893c;
+}
+
+.historia__titulo {
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 2.8rem;
+  color: #7a1f1f;
+  margin: 0 0 0.5rem;
+}
+
+.historia__subtitulo {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.historia__secao {
+  margin-bottom: 2.5rem;
+}
+
+.historia__secao-titulo {
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 1.7rem;
+  color: #7a1f1f;
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.historia__texto {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin: 0 0 1.5rem;
+}
+
+.historia__destaque {
+  font-size: 1.35rem;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: #7a1f1f;
+  margin: 1.5rem 0;
+}
+.historia__lista {
+  margin-top: 1.5rem;
+}
+
+.historia__personagem {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: 1.5rem 0;
+  border-bottom: 1px dashed #b8893c;
+}
+
+.historia__personagem:first-child {
+  padding-top: 0.5rem;
+}
+
+.historia__personagem:last-child {
+  border-bottom: none;
+}
+
+/* Selo de cera com a inicial */
+.historia__selo {
+  flex: 0 0 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.9rem;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(40, 20, 5, 0.45), inset 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+.historia__personagem--vilao .historia__selo {
+  background: radial-gradient(circle at 35% 30%, #a83232 0%, #7a1f1f 60%, #4d1212 100%);
+  color: #f3e2b3;
+  border: 3px solid #4d1212;
+}
+
+.historia__personagem--heroi .historia__selo {
+  background: radial-gradient(circle at 35% 30%, #e3b53c 0%, #b8893c 60%, #8a5a24 100%);
+  color: #3a2616;
+  border: 3px solid #8a5a24;
+}
+
+.historia__personagem-corpo {
+  flex: 1;
+  min-width: 0;
+}
+
+.historia__personagem-nome {
+  font-size: 1.3rem;
+  color: #7a1f1f;
+  margin: 0;
+}
+
+.historia__personagem-titulo {
+  font-style: italic;
+  font-weight: bold;
+  margin: 0.15rem 0 0;
+}
+
+.historia__personagem-info {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin: 0.1rem 0 0.75rem;
+}
+
+.historia__personagem-texto {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-align: justify;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .historia__personagem {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .historia__selo {
+    flex-basis: auto;
+    width: 52px;
+    height: 52px;
+    font-size: 1.5rem;
+  }
+}
+
+.historia__falas {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #7a1f1f;
+  background: rgba(255, 248, 225, 0.4);
+  border-radius: 0 8px 8px 0;
+}
+
+.historia__fala {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.9rem;
+}
+
+.historia__fala:last-child {
+  margin-bottom: 0;
+}
+
+.historia__fala-frase {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.historia__fala-autor {
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 0.9rem;
+  color: #7a1f1f;
+}
+
+@media (max-width: 600px) {
+  .historia__pergaminho {
+    padding: 2rem 1.25rem;
+  }
+
+  .historia__titulo {
+    font-size: 2rem;
+  }
+}
+
+.historia__titulo,
+.historia__secao-titulo,
+.historia__card-nome {
+  font-family: inherit;
+}
