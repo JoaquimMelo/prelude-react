@@ -4,6 +4,7 @@ import Herois from "./pages/Herois/herois.tsx";
 import Viloes from "./pages/Viloes/viloes.tsx";
 import Suporte from "./pages/Suporte/suporte.tsx";
 import Mapas from "./pages/Mapas/mapas.tsx";
+import historia from "./pages/Historia/historia.tsx";
 
 export default function App() {
   return (
