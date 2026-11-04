@@ -1,0 +1,49 @@
+.folha-como-jogar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+  padding: clamp(14px, 2vw, 24px);
+  border: 2px solid #ba9863;
+  background: linear-gradient(180deg, #ead7a0, #b89457);
+  color: #3d2818;
+  box-shadow: inset 0 0 0 4px #e4c995;
+}
+
+.folha-como-jogar * {
+  color: inherit;
+}
+
+.folha-como-jogar--ativa {
+  border-color: #926138;
+}
+
+.folha-como-jogar__titulo {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ba9863;
+  font-size: clamp(22px, 2.6vw, 30px);
+  text-align: center;
+  text-wrap: balance;
+}
+
+.folha-como-jogar__romano {
+  color: #77512e;
+  font-size: 0.65em;
+}
+
+.folha-como-jogar__conteudo {
+  display: grid;
+  gap: 14px;
+}
+
+.folha-como-jogar__rodape {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 8px;
+  border-top: 1px solid #ba9863;
+  color: #634623;
+  font-size: 15px;
+}
