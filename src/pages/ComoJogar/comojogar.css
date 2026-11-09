@@ -139,6 +139,15 @@
   font-size: 19px;
 }
 
+.como-jogar__destaque--chefe {
+  padding-top: 12px;
+  border-top: 1px solid #a17b4c;
+}
+
+.como-jogar__destaque--chefe p + p {
+  margin-top: 8px;
+}
+
 .como-jogar__icone {
   display: block;
   width: 42px;
@@ -148,6 +157,92 @@
   background: #e4c995;
   object-fit: contain;
   image-rendering: pixelated;
+}
+
+/* Arena e exemplos de cartas */
+
+.como-jogar__arena {
+  position: relative;
+}
+
+.como-jogar__marcador {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #79502c;
+  background: #f4df9d;
+  font-size: 16px;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+
+.como-jogar__legenda {
+  display: grid;
+  gap: 6px;
+  padding-left: 22px;
+}
+
+.como-jogar__exemplos {
+  margin: 0;
+}
+
+.como-jogar__exemplos figcaption {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.como-jogar__cartas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.como-jogar__cartas img {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+.como-jogar__ciclo {
+  display: grid;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid #a17b4c;
+}
+
+.como-jogar__ciclo h3 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.como-jogar__fluxo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.como-jogar__fluxo li {
+  position: relative;
+  padding: 8px 4px;
+  border: 1px solid #a17b4c;
+  background: #ead7a0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.como-jogar__fluxo li + li::before {
+  content: "→" / "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: 16px;
+  transform: translateY(-50%);
 }
 
 @media (max-width: 800px) {
