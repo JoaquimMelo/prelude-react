@@ -21,11 +21,11 @@
 
 .heroi-imagem {
     position: absolute;
-    width: 70%;
-    height: 87%;
+    width: 75%;
+    height: 95%;
     object-fit: contain;
     bottom: 5%;
-    left: 16%;
+    left: 12%;
     z-index: 3;
 }
 
@@ -59,11 +59,11 @@
 
 .vilao-imagem {
     position: absolute;
-    width: 60%;
-    height: 89%;
+    width: 75%;
+    height: 95%;
     object-fit: contain;
-    bottom: 5%;
-    left: 19%;
+    bottom: 3%;
+    left: 12%;
     z-index: 3;
 }
 
