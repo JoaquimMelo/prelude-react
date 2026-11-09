@@ -1,5 +1,8 @@
 import './historia.css'
 
+import Menu from "../../components/Menu/menu";
+import Footer from "../../components/Footer/footer";
+
 type Personagem = {
   nome: string;
   titulo: string;
@@ -103,6 +106,7 @@ const falas: Fala[] = [
   { autor: 'Vicent', frase: '“Provavelmente” é uma palavra otimista.' },
 ];
 
+
 function CardPersonagem({
   personagem,
   tipo,
@@ -127,6 +131,9 @@ function CardPersonagem({
 
 export default function Historia() {
   return (
+    <>
+    <Menu/>
+
     <main className="historia" translate="no">
       <div className="historia__pergaminho">
         <header className="historia__cabecalho">
@@ -228,6 +235,7 @@ export default function Historia() {
     <CardPersonagem key={p.nome} personagem={p} tipo="heroi" />
   ))}
 </div> 
+
         </section>
 
         <section className="historia__secao">
@@ -293,8 +301,12 @@ export default function Historia() {
           <p className="historia__destaque">
             O sol está descendo. E a história começa agora.
           </p>
+
         </section>
       </div>
     </main>
+    <Footer />
+    </>
+    
   );
 }
