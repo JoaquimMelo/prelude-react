@@ -194,9 +194,8 @@ export default function Comunidade() {
               <li>Marque spoilers da história.</li>
               <li>Nada de propaganda ou links suspeitos.</li>
             </ul>
+                <Footer/>
 
-            <Footer />
-            
           </section>
         </aside>
       </div>
