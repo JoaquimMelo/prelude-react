@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import type { FormEvent } from "react";
+import Menu from "../../components/Menu/Menu";
+import Footer from "../../components/Footer/Footer";
 import "./comunidade.css";
 
 type Categoria = "Dúvida" | "Teoria" | "Estratégia" | "Fan art";
@@ -89,6 +91,7 @@ export default function Comunidade() {
   const visiveis = filtro === "Todas" ? posts : posts.filter((p) => p.categoria === filtro);
 
   return (
+
     <main className="comunidade">
       <header className="comunidade__hero">
         <h1 className="comunidade__titulo">A Taverna do Prelude</h1>
@@ -191,6 +194,9 @@ export default function Comunidade() {
               <li>Marque spoilers da história.</li>
               <li>Nada de propaganda ou links suspeitos.</li>
             </ul>
+
+            <Footer />
+            
           </section>
         </aside>
       </div>
