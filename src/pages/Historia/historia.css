@@ -201,3 +201,74 @@
 .historia__card-nome {
   font-family: inherit;
 }
+
+.historia__pergaminho {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 960px;
+  padding: 3rem 2.5rem;
+  background: radial-gradient(ellipse at center, #f3e2b3 0%, #e7cf98 60%, #d2b177 100%);
+  color: #3a2616;
+  border: 6px double #8a5a24;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7), inset 0 0 60px rgba(120, 80, 30, 0.35);
+  font-family: 'IM Fell English', Georgia, serif;
+}
+
+  .historia__cabecalho,
+.historia__secao {
+  position: relative;
+  z-index: 2;
+}
+
+.pintura {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.35;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  user-select: none;
+  }
+
+  .rup-1 {
+  top: 11%;
+  left: 4%;
+  width: 220px;
+  transform: rotate(-5deg);
+}
+
+.rup-2 {
+  top: 46%;
+  right: 5%;
+  width: 240px;
+  transform: rotate(4deg);
+}
+
+.rup-3 {
+  bottom: 3%;
+  left: 8%;
+  width: 230px;
+  transform: rotate(-3deg);
+}
+
+.rup-4 {
+  top: 17%;
+  right: 8%;
+  width: 180px;
+  transform: rotate(4deg);
+}
+
+.rup-5 {
+  top: 35%;
+  left: 90%;
+  width: 215px;
+  transform: rotate(17deg);
+}
+
+.rup-6 {
+  bottom: 25%;
+  left: 5%;
+  width: 225px;
+  transform: rotate(-6deg);
+}

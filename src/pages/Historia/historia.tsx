@@ -1,7 +1,15 @@
-import './historia.css'
+import './historia.css';
 
 import Menu from "../../components/Menu/menu";
 import Footer from "../../components/Footer/footer";
+
+import rup1 from '../../assets/pinturas/rup1.png';
+import rup2 from '../../assets/pinturas/rup2.png';
+import rup3 from '../../assets/pinturas/rup3.png';
+import rup4 from '../../assets/pinturas/rup4.png';
+import rup5 from '../../assets/pinturas/rup5.png';
+import rup6 from '../../assets/pinturas/rup6.png';
+
 
 type Personagem = {
   nome: string;
@@ -106,7 +114,6 @@ const falas: Fala[] = [
   { autor: 'Vicent', frase: '“Provavelmente” é uma palavra otimista.' },
 ];
 
-
 function CardPersonagem({
   personagem,
   tipo,
@@ -132,181 +139,185 @@ function CardPersonagem({
 export default function Historia() {
   return (
     <>
-    <Menu/>
+      <Menu />
 
-    <main className="historia" translate="no">
-      <div className="historia__pergaminho">
-        <header className="historia__cabecalho">
-          <h1 className="historia__titulo">Prelude</h1>
-          <p className="historia__subtitulo">A lenda do sol que parou</p>
-        </header>
+      <main className="historia" translate="no">
+        <div className="historia__pergaminho">
+          <img src={rup1} alt="" aria-hidden="true" className="pintura rup-1" />
+          <img src={rup2} alt="" aria-hidden="true" className="pintura rup-2" />
+          <img src={rup3} alt="" aria-hidden="true" className="pintura rup-3" />
+          <img src={rup4} alt="" aria-hidden="true" className="pintura rup-4" />
+          <img src={rup5} alt="" aria-hidden="true" className="pintura rup-5" />
+          <img src={rup6} alt="" aria-hidden="true" className="pintura rup-6" />
 
-        <section className="historia__secao">
-          <h2 className="historia__secao-titulo">Prólogo: O Crepúsculo Imóvel</h2>
-          <p className="historia__texto">
-            Em todas as eras, o sol cumpriu a mesma promessa: descer ao fim do dia
-            e voltar ao amanhecer. Ninguém agradecia por isso. Ninguém agradece
-            por aquilo que nunca falha.
-          </p>
-          <p className="historia__destaque">
-            Até que, num fim de tarde igual a tantos outros, o sol parou.
-          </p>
-          <p className="historia__texto">
-            Não se apagou, não caiu, não se escondeu. Ficou suspenso sobre o
-            horizonte, metade dentro, metade fora, como um olho que se recusa a
-            fechar. O céu ardeu em laranja e púrpura e assim permaneceu. Os galos
-            não cantaram, porque não houve madrugada. Os sinos não anunciaram a
-            noite, porque a noite não veio. Os sábios chamaram o fenômeno de
-            Crepúsculo Imóvel. O povo escolheu outro nome: o Prelúdio.
-          </p>
-          <p className="historia__texto">
-            Porque todos sentiram a mesma coisa. Aquela luz dourada, bela demais
-            para ser inocente, não era um fim nem um começo. Era o fôlego antes do
-            grito. Era o silêncio que a orquestra faz antes da primeira nota. E a
-            cada dia o sol descia mais um dedo, com a paciência de quem já sabe
-            que vai vencer.
-          </p>
-        </section>
+          <header className="historia__cabecalho">
+            <h1 className="historia__titulo">Prelude</h1>
+            <p className="historia__subtitulo">A lenda do sol que parou</p>
+          </header>
 
-        <section className="historia__secao">
-          <h2 className="historia__secao-titulo">Capítulo I: O Mundo Antes da Cinza</h2>
-          <p className="historia__texto">
-            O mundo conhecido é feito de contrastes. Nos fiordes gelados do Norte,
-            homens aprenderam a rir do frio. Nas ilhas de névoa, magos estudam o
-            que os reis preferem esquecer. Entre canais e diques, mercadores
-            vendem tudo, inclusive a própria espada. Nas estepes sem fim, cavalos
-            correm mais rápido que as notícias. Nos impérios de neve, cavaleiros
-            juram até o último inverno. E nos desertos vermelhos, as tumbas
-            guardam segredos mais antigos que os deuses.
-          </p>
-          <p className="historia__texto">
-            Além dessas terras, existem os lugares que os mapas evitam: o Reino de
-            Vhaldrak, a Floresta de Nyr, as Terras do Norte, as Montanhas de
-            Drakmor e as Ruínas de Eldrath.
-          </p>
-          <p className="historia__texto">
-            Eldrath foi a primeira cidade que aprendeu a contar as horas do mundo.
-            No seu coração ficava o Relógio do Mundo, uma máquina de bronze e
-            cristal que mantinha o dia e a noite em seus lugares. Numa única
-            noite, Eldrath ardeu. Dizem que o fogo veio do céu, dizem que veio das
-            montanhas, dizem que a própria cidade pediu por ele. O Relógio se
-            partiu em fragmentos, e os fragmentos se espalharam pelo mundo como
-            sementes de uma flor que ninguém quis plantar.
-          </p>
-          <p className="historia__texto">
-            Durante séculos, a hora do mundo ficou sem dono. Até que alguém
-            caminhou entre as ruínas e começou a juntar as peças.
-          </p>
-          <p className="historia__texto">
-            Todo feiticeiro da morte sabe que o crepúsculo é a única hora em que a
-            porta entre os vivos e os mortos fica entreaberta. Morvath não quis
-            apenas abri-la. Quis prender o sol na soleira, para que ela nunca mais
-            se fechasse.
-          </p>
-        </section>
+          <section className="historia__secao">
+            <h2 className="historia__secao-titulo">Prólogo: O Crepúsculo Imóvel</h2>
+            <p className="historia__texto">
+              Em todas as eras, o sol cumpriu a mesma promessa: descer ao fim do dia
+              e voltar ao amanhecer. Ninguém agradecia por isso. Ninguém agradece
+              por aquilo que nunca falha.
+            </p>
+            <p className="historia__destaque">
+              Até que, num fim de tarde igual a tantos outros, o sol parou.
+            </p>
+            <p className="historia__texto">
+              Não se apagou, não caiu, não se escondeu. Ficou suspenso sobre o
+              horizonte, metade dentro, metade fora, como um olho que se recusa a
+              fechar. O céu ardeu em laranja e púrpura e assim permaneceu. Os galos
+              não cantaram, porque não houve madrugada. Os sinos não anunciaram a
+              noite, porque a noite não veio. Os sábios chamaram o fenômeno de
+              Crepúsculo Imóvel. O povo escolheu outro nome: o Prelúdio.
+            </p>
+            <p className="historia__texto">
+              Porque todos sentiram a mesma coisa. Aquela luz dourada, bela demais
+              para ser inocente, não era um fim nem um começo. Era o fôlego antes do
+              grito. Era o silêncio que a orquestra faz antes da primeira nota. E a
+              cada dia o sol descia mais um dedo, com a paciência de quem já sabe
+              que vai vencer.
+            </p>
+          </section>
 
-        <section className="historia__secao">
-          <h2 className="historia__secao-titulo">Capítulo II: Os Cinco Sombrios</h2>
-          <p className="historia__texto">
-            Eles não formam um exército. Formam um incêndio: cinco fagulhas que só
-            concordam num ponto, o de que este mundo, do jeito que está, não
-            merece continuar. Cada um acredita que está usando os outros. Talvez
-            todos tenham razão.
-          </p>
-<div className="historia__lista">
-  {sombrios.map((p) => (
-    <CardPersonagem key={p.nome} personagem={p} tipo="vilao" />
-  ))}
-</div>
-        </section>
+          <section className="historia__secao">
+            <h2 className="historia__secao-titulo">Capítulo I: O Mundo Antes da Cinza</h2>
+            <p className="historia__texto">
+              O mundo conhecido é feito de contrastes. Nos fiordes gelados do Norte,
+              homens aprenderam a rir do frio. Nas ilhas de névoa, magos estudam o
+              que os reis preferem esquecer. Entre canais e diques, mercadores
+              vendem tudo, inclusive a própria espada. Nas estepes sem fim, cavalos
+              correm mais rápido que as notícias. Nos impérios de neve, cavaleiros
+              juram até o último inverno. E nos desertos vermelhos, as tumbas
+              guardam segredos mais antigos que os deuses.
+            </p>
+            <p className="historia__texto">
+              Além dessas terras, existem os lugares que os mapas evitam: o Reino de
+              Vhaldrak, a Floresta de Nyr, as Terras do Norte, as Montanhas de
+              Drakmor e as Ruínas de Eldrath.
+            </p>
+            <p className="historia__texto">
+              Eldrath foi a primeira cidade que aprendeu a contar as horas do mundo.
+              No seu coração ficava o Relógio do Mundo, uma máquina de bronze e
+              cristal que mantinha o dia e a noite em seus lugares. Numa única
+              noite, Eldrath ardeu. Dizem que o fogo veio do céu, dizem que veio das
+              montanhas, dizem que a própria cidade pediu por ele. O Relógio se
+              partiu em fragmentos, e os fragmentos se espalharam pelo mundo como
+              sementes de uma flor que ninguém quis plantar.
+            </p>
+            <p className="historia__texto">
+              Durante séculos, a hora do mundo ficou sem dono. Até que alguém
+              caminhou entre as ruínas e começou a juntar as peças.
+            </p>
+            <p className="historia__texto">
+              Todo feiticeiro da morte sabe que o crepúsculo é a única hora em que a
+              porta entre os vivos e os mortos fica entreaberta. Morvath não quis
+              apenas abri-la. Quis prender o sol na soleira, para que ela nunca mais
+              se fechasse.
+            </p>
+          </section>
 
-        <section className="historia__secao">
-          <h2 className="historia__secao-titulo">Capítulo III: Os Chamados</h2>
-          <p className="historia__texto">
-            Foi no terceiro dia do Prelúdio que os sonhos começaram. Em seis
-            lugares do mundo, seis pessoas que jamais tinham se visto sonharam com
-            o mesmo campo, a mesma árvore antiga, a mesma casa de pedra com uma
-            janela acesa e uma fogueira que ninguém tinha aceso. Cada uma ouviu
-            uma voz diferente chamando seu nome. Nenhuma contou a ninguém. Todas
-            partiram.
-          </p>
-<div className="historia__lista">
-  {herois.map((p) => (
-    <CardPersonagem key={p.nome} personagem={p} tipo="heroi" />
-  ))}
-</div> 
+          <section className="historia__secao">
+            <h2 className="historia__secao-titulo">Capítulo II: Os Cinco Sombrios</h2>
+            <p className="historia__texto">
+              Eles não formam um exército. Formam um incêndio: cinco fagulhas que só
+              concordam num ponto, o de que este mundo, do jeito que está, não
+              merece continuar. Cada um acredita que está usando os outros. Talvez
+              todos tenham razão.
+            </p>
+            <div className="historia__lista">
+              {sombrios.map((p) => (
+                <CardPersonagem key={p.nome} personagem={p} tipo="vilao" />
+              ))}
+            </div>
+          </section>
 
-        </section>
+          <section className="historia__secao">
+            <h2 className="historia__secao-titulo">Capítulo III: Os Chamados</h2>
+            <p className="historia__texto">
+              Foi no terceiro dia do Prelúdio que os sonhos começaram. Em seis
+              lugares do mundo, seis pessoas que jamais tinham se visto sonharam com
+              o mesmo campo, a mesma árvore antiga, a mesma casa de pedra com uma
+              janela acesa e uma fogueira que ninguém tinha aceso. Cada uma ouviu
+              uma voz diferente chamando seu nome. Nenhuma contou a ninguém. Todas
+              partiram.
+            </p>
+            <div className="historia__lista">
+              {herois.map((p) => (
+                <CardPersonagem key={p.nome} personagem={p} tipo="heroi" />
+              ))}
+            </div>
+          </section>
 
-        <section className="historia__secao">
-          <h2 className="historia__secao-titulo">Capítulo IV: A Fogueira</h2>
-          <p className="historia__texto">
-            Chegaram à casa de pedra em momentos diferentes, cada um certo de que
-            era o primeiro. No campo, a árvore os esperava. Na chaminé, a fumaça
-            subia fina. Na janela, a luz nunca falhava. E no meio do gramado
-            ardia a fogueira que ninguém tinha acendido e que, diriam depois,
-            nunca se apagou.
-          </p>
-          <p className="historia__texto">
-            Ninguém confiou em ninguém. Sentaram-se à distância de uma lâmina: o
-            viking com o chifre entre as mãos, o mago de cócoras diante da chama,
-            o cavaleiro de armadura ainda fechada, o rei com o mapa aberto sobre
-            os joelhos, o ladino à beira do riacho fingindo lavar as mãos e o
-            mercenário sob o carvalho, lendo, como quem não tem pressa de morrer.
-          </p>
+          <section className="historia__secao">
+            <h2 className="historia__secao-titulo">Capítulo IV: A Fogueira</h2>
+            <p className="historia__texto">
+              Chegaram à casa de pedra em momentos diferentes, cada um certo de que
+              era o primeiro. No campo, a árvore os esperava. Na chaminé, a fumaça
+              subia fina. Na janela, a luz nunca falava. E no meio do gramado
+              ardia a fogueira que ninguém tinha acendido e que, diriam depois,
+              nunca se apagou.
+            </p>
+            <p className="historia__texto">
+              Ninguém confiou em ninguém. Sentaram-se à distância de uma lâmina: o
+              viking com o chifre entre as mãos, o mago de cócoras diante da chama,
+              o cavaleiro de armadura ainda fechada, o rei com o mapa aberto sobre
+              os joelhos, o ladino à beira do riacho fingindo lavar as mãos e o
+              mercenário sob o carvalho, lendo, como quem não tem pressa de morrer.
+            </p>
 
-          <ul className="historia__falas">
-            {falas.map((f) => (
-              <li key={f.autor} className="historia__fala">
-                <q className="historia__fala-frase">{f.frase}</q>
-                <span className="historia__fala-autor">{f.autor}</span>
-              </li>
-            ))}
-          </ul>
+            <ul className="historia__falas">
+              {falas.map((f) => (
+                <li key={f.autor} className="historia__fala">
+                  <q className="historia__fala-frase">{f.frase}</q>
+                  <span className="historia__fala-autor">{f.autor}</span>
+                </li>
+              ))}
+            </ul>
 
-          <p className="historia__texto">
-            Foi então que a sombra passou por cima deles. Ninguém falou. Ninguém
-            precisou. No céu de brasa, muito alto, um dragão vermelho cruzava a
-            luz eterna, sem pressa e sem rugido, como quem apenas queria ver quem
-            havia acendido aquele fogo. Azrakar olhou o acampamento por um longo
-            instante e seguiu adiante.
-          </p>
-          <p className="historia__texto">
-            Insight se levantou devagar, escudo em punho. Jurou em voz baixa os
-            nomes dos seus mortos. Um a um, os outros não disseram nada. Mas, um a
-            um, todos ficaram.
-          </p>
-        </section>
+            <p className="historia__texto">
+              Foi então que a sombra passou por cima deles. Ninguém falou. Ninguém
+              precisou. No céu de brasa, muito alto, um dragão vermelho cruzava a
+              luz eterna, sem pressa e sem rugido, como quem apenas queria ver quem
+              havia acendido aquele fogo. Azrakar olhou o acampamento por um longo
+              instante e seguiu adiante.
+            </p>
+            <p className="historia__texto">
+              Insight se levantou devagar, escudo em punho. Jurou em voz baixa os
+              nomes dos seus mortos. Um a um, os outros não disseram nada. Mas, um a
+              um, todos ficaram.
+            </p>
+          </section>
 
-        <section className="historia__secao">
-          <h2 className="historia__secao-titulo">Epílogo: O Prelúdio</h2>
-          <p className="historia__texto">
-            Aquela noite não foi noite. O sol continuou imóvel no horizonte, um
-            dedo mais baixo que no dia anterior. A fogueira dividiu seis
-            desconhecidos em seis guardas e seis sonos leves. Ninguém sabia ainda
-            que os Cinco Sombrios já se moviam. Ninguém sabia que Kael seguia o
-            cheiro de um cristal roubado, que Ragnar reconhecera o machado de um
-            velho amigo numa lembrança antiga, que Malakar acordara a cinza em
-            Vhaldrak, que Morvath sorria nas ruínas de uma cidade morta.
-          </p>
-          <p className="historia__texto">
-            Aquilo ainda não era a guerra. Era o que vem antes dela: a última
-            refeição partilhada, a última conversa em voz baixa, o último instante
-            em que a luz ainda parece bonita.
-          </p>
-          <p className="historia__texto">
-            Toda grande canção começa com um prelúdio. Esta começa com seis
-            desconhecidos, uma fogueira e um céu que se recusa a escurecer.
-          </p>
-          <p className="historia__destaque">
-            O sol está descendo. E a história começa agora.
-          </p>
-
-        </section>
-      </div>
-    </main>
-    <Footer />
+          <section className="historia__secao">
+            <h2 className="historia__secao-titulo">Epílogo: O Prelúdio</h2>
+            <p className="historia__texto">
+              Aquela noite não foi noite. O sol continuou imóvel no horizonte, um
+              dedo mais baixo que no dia anterior. A fogueira dividiu seis
+              desconhecidos em seis guardas e seis sonos leves. Ninguém sabia ainda
+              que os Cinco Sombrios já se moviam. Ninguém sabia que Kael seguia o
+              cheiro de um cristal roubado, que Ragnar reconhecera o machado de um
+              velho amigo numa lembrança antiga, que Malakar acordara a cinza em
+              Vhaldrak, que Morvath sorria nas ruínas de uma cidade morta.
+            </p>
+            <p className="historia__texto">
+              Aquilo ainda não era a guerra. Era o que vem antes dela: a última
+              refeição partilhada, a última conversa em voz baixa, o último instante
+              em que a luz ainda parece bonita.
+            </p>
+            <p className="historia__texto">
+              Toda grande canção começa com um prelúdio. Esta começa com seis
+              desconhecidos, uma fogueira e um céu que se recusa a escurecer.
+            </p>
+            <p className="historia__destaque">
+              O sol está descendo. E a história começa agora.
+            </p>
+          </section>
+        </div>
+      </main>
+      <Footer />
     </>
-    
   );
 }
