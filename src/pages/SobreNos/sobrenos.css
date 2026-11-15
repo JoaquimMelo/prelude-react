@@ -1,0 +1,132 @@
+/* Fonte pixel art: adicione no index.html (dentro do <head>):
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+*/
+
+.sobre {
+  --fundo-topo: #2e1d12;
+  --fundo-base: #1a110b;
+  --dourado: #e3b93c;
+  --dourado-escuro: #9a6e1f;
+  --creme: #f1d9b5;
+  --creme-suave: #b9a083;
+
+  min-height: 100vh;
+  padding: 72px 24px 120px;
+  background: radial-gradient(
+    ellipse at 50% 30%,
+    var(--fundo-topo) 0%,
+    var(--fundo-base) 75%
+  );
+  color: var(--creme);
+  font-family: "Pixelify Sans", "Courier New", monospace;
+}
+
+.sobre__conteudo {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.sobre__titulo {
+  margin: 0 0 32px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--dourado);
+}
+
+.sobre__secao {
+  margin-bottom: 48px;
+}
+
+.sobre__subtitulo {
+  margin: 0 0 16px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--dourado);
+}
+
+.sobre__texto {
+  margin: 0 0 16px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--creme);
+}
+
+/* Equipe */
+.equipe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.equipe__membro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.equipe__foto {
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
+  border: 3px solid var(--dourado-escuro);
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--fundo-base);
+}
+
+.equipe__nome {
+  margin: 16px 0 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--creme);
+}
+
+.equipe__ra {
+  margin: 0;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--creme-suave);
+}
+
+/* Tecnologias */
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tecnologias__item {
+  padding: 8px 14px;
+  border: 2px solid var(--dourado-escuro);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: var(--creme);
+}
+
+/* Responsivo */
+@media (max-width: 720px) {
+  .equipe {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .equipe__foto {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 420px) {
+  .sobre {
+    padding: 48px 16px 80px;
+  }
+  .equipe {
+    grid-template-columns: 1fr;
+  }
+}
