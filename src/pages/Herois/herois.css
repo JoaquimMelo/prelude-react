@@ -12,3 +12,92 @@
     color: #d4af37;
     margin-bottom: 30px;
 }
+
+.heroi-card {
+    position: relative;
+    overflow: visible;
+}
+
+.heroi-preview {
+    position: absolute;
+    bottom: 88%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px) scale(0.96);
+    width: 270px;
+    max-width: 85vw;
+    padding: 14px;
+    background: rgba(20, 15, 12, 0.96);
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.85);
+    color: #f3e2b3;
+    text-align: left;
+    z-index: 30;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+.heroi-card:hover .heroi-preview {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0) scale(1);
+}
+
+.heroi-preview-topo {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+}
+
+.heroi-preview-foto {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #d4af37;
+    background: #120d0a;
+    flex-shrink: 0;
+}
+
+.heroi-preview-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.heroi-preview-nome {
+    font-family: "Pixelify Sans", monospace;
+    font-size: 16px;
+    color: #d4af37;
+    margin: 0 0 6px;
+}
+
+.heroi-preview-status {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.heroi-preview-status span {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.heroi-preview-descricao {
+    margin: 10px 0 0;
+    font-size: 13px;
+    line-height: 1.45;
+    color: #e6d8b5;
+    min-height: 42px;
+}
+
+.heroi-preview-status li {
+    color: #ffffff !important;
+}
