@@ -8,7 +8,6 @@ interface LinkImagemProps {
 }
 
 export default function LinkImagem({ href, imagem, nome, descricao }: LinkImagemProps) {
-    // Links http(s) abrem em outra aba; mailto: abre o programa de e-mail
     const externo = href.startsWith('http');
 
     return (
