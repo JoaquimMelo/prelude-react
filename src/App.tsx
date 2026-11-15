@@ -20,7 +20,7 @@ export default function App() {
       <Route path="/historia" element={<Historia />} />
       <Route path="/comojogar" element={<ComoJogar />} />
       <Route path="/comunidade" element={<Comunidade />} />
-      <Route path="/sobrenos" element={<Sobre nós />} />
+      <Route path="/sobrenos" element={<SobreNos />} />
     </Routes>
   );
 }
