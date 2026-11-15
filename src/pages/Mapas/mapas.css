@@ -35,7 +35,7 @@
 .mapas__titulo {
   margin: 0 0 8px;
   font-size: 40px;
-  color: #a01414;
+  color: #e0ab19;
   text-shadow: 2px 2px 0 #000;
 }
 
@@ -86,10 +86,34 @@
   font-weight: bold;
 }
 
+.atlas__aba:nth-child(1) {
+  background: linear-gradient(180deg, #ead7a0 35%, #c77c63 100%);
+}
+
+.atlas__aba:nth-child(2) {
+  background: linear-gradient(180deg, #ead7a0 35%, #9e82b5 100%);
+}
+
+.atlas__aba:nth-child(3) {
+  background: linear-gradient(180deg, #ead7a0 35%, #799db8 100%);
+}
+
 .atlas__aba--ativa {
   border-color: #d4af37;
   background: #4a2c19;
   color: #f4df9d;
+}
+
+.atlas__aba:nth-child(1).atlas__aba--ativa {
+  background: linear-gradient(180deg, #4a2c19 30%, #6e221b 100%);
+}
+
+.atlas__aba:nth-child(2).atlas__aba--ativa {
+  background: linear-gradient(180deg, #4a2c19 30%, #492663 100%);
+}
+
+.atlas__aba:nth-child(3).atlas__aba--ativa {
+  background: linear-gradient(180deg, #4a2c19 30%, #1d4466 100%);
 }
 
 .atlas__aba:focus-visible {
@@ -105,4 +129,29 @@
   .atlas__abas {
     grid-template-columns: 1fr;
   }
+}
+
+/* Degradê no nome da região selecionada */
+.atlas > :not(.atlas__abas) h2:first-of-type {
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  filter: drop-shadow(2px 2px 0 #000);
+}
+
+/* Região I — Dourado para Vermelho */
+.atlas--regiao-1 > :not(.atlas__abas) h2:first-of-type {
+  background-image: linear-gradient(180deg, #f4df9d 20%, #d9534f 100%);
+}
+
+/* Região II — Dourado para Roxo */
+.atlas--regiao-2 > :not(.atlas__abas) h2:first-of-type {
+  background-image: linear-gradient(180deg, #f4df9d 20%, #a87cd4 100%);
+}
+
+/* Região III — Dourado para Azul */
+.atlas--regiao-3 > :not(.atlas__abas) h2:first-of-type {
+  background-image: linear-gradient(180deg, #f4df9d 20%, #6cb4e8 100%);
 }

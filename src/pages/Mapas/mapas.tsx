@@ -63,12 +63,12 @@ export default function Mapas() {
           <p className="mapas__subtitulo">Atlas da aventura</p>
         </header>
 
-        <div className="atlas">
-          <div
-            className="atlas__abas"
-            role="group"
-            aria-label="Selecione uma região"
-          >
+  <div className={`atlas atlas--regiao-${regiaoSelecionada + 1}`}>
+  <div
+    className="atlas__abas"
+    role="group"
+    aria-label="Selecione uma região"
+  >
             {regioes.map((regiao, indice) => (
               <button
                 key={regiao.nome}
