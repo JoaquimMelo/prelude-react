@@ -15,9 +15,15 @@
   flex-wrap: nowrap;
 
   gap: 50px;
-  padding: 24px 20px;
+  padding: 24px 20px 32px;
 
-  background: #24180f;
+  background: linear-gradient(
+    to bottom,
+    #24180f 0%,
+    #24180f 75%,
+    rgba(36, 24, 15, 0.5) 88%,
+    rgba(36, 24, 15, 0) 100%
+  );
 }
 
 .menu-logo {
@@ -45,7 +51,22 @@
   background: linear-gradient(
     to bottom,
     #3f2105 0%,
-    #4e2600 calc(100% - 24px),
+    #4e2600 75%,
+    rgba(78, 38, 0, 0.5) 88%,
     rgba(78, 38, 0, 0) 100%
   );
+}
+
+/* Brilho dourado no pergaminho da página atual */
+.home-botoes[data-pagina="/"] > :nth-child(2),
+.home-botoes[data-pagina="/herois"] > :nth-child(3),
+.home-botoes[data-pagina="/viloes"] > :nth-child(4),
+.home-botoes[data-pagina="/historia"] > :nth-child(5),
+.home-botoes[data-pagina="/mapas"] > :nth-child(6),
+.home-botoes[data-pagina="/comojogar"] > :nth-child(7),
+.home-botoes[data-pagina="/cartas"] > :nth-child(8) {
+  transform: translateY(-4px) scale(1.05);
+  filter: drop-shadow(0 0 6px rgba(244, 223, 157, 0.9))
+    drop-shadow(0 0 16px rgba(212, 175, 55, 0.7))
+    brightness(1.12);
 }

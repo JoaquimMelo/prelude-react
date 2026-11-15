@@ -4,7 +4,10 @@ import logo from "../../assets/logo.png";
 
 export default function Menu() {
   return (
-    <nav className="home-botoes">
+    <nav
+      className="home-botoes"
+      data-pagina={window.location.pathname.replace(/\/$/, "").toLowerCase() || "/"}
+    >
       <a className="menu-logo" href="/">
         <img src={logo} alt="Prelude — página inicial" />
       </a>
