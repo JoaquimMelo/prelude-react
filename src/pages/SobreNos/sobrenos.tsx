@@ -1,3 +1,8 @@
+import { useEffect, useState } from "react";
+import type { FormEvent } from "react";
+import Footer from "../../components/Footer/footer.tsx";
+import Menu from "../../components/Menu/menu.tsx";
+
 import "./SobreNos.css";
 
 // Troque os caminhos das fotos pelos arquivos reais do projeto
@@ -15,6 +20,8 @@ const tecnologias = ["HTML5", "CSS3", "JavaScript", "React"];
 
 export default function SobreNos() {
   return (
+    <>
+    <Menu />
     <main className="sobre">
       <div className="sobre__conteudo">
         <h1 className="sobre__titulo">Sobre Nós</h1>
@@ -60,8 +67,11 @@ export default function SobreNos() {
               </li>
             ))}
           </ul>
-        </section>
+       </section>
       </div>
+      <Footer/>
     </main>
+    </>
   );
+
 }
