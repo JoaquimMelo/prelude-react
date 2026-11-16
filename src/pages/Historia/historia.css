@@ -9,14 +9,31 @@
 }
 
 .historia__pergaminho {
+  /* ADICIONADO: necessário para posicionar as pinturas (.rup-1 a .rup-6) dentro do pergaminho */
+  position: relative;
+  overflow: hidden;
+
   width: 100%;
-  max-width: 960px;
-  padding: 3rem 2.5rem;
-  background: radial-gradient(ellipse at center, #f3e2b3 0%, #e7cf98 60%, #d2b177 100%);
+  /* ALTERADO: de 960px para 1120px para dar mais espaço horizontal ao texto na imagem*/
+  max-width: 1120px;
+  /* ADICIONADO: evita que o border-width estoure a largura máxima */
+  box-sizing: border-box;
+ 
+  padding: 1rem 1.5rem;
+
+  /* ALTERADO: substituído o fundo/borda CSS pela imagem fatiada do pergaminho em pixel art */
+  border-style: solid;
+  border-width: 205px 155px 205px 155px;
+  border-image-source: url('../../assets/fundohistoria/pergaminhohistoria.png');
+  border-image-slice: 27% 15% 27% 15% fill;
+  border-image-repeat: round;
+  image-rendering: pixelated;
+
+  background-color: transparent;
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.85));
+  /* FIM DA ALTERAÇÃO DO FUNDO/BORDA */
+
   color: #3a2616;
-  border: 6px double #8a5a24;
-  border-radius: 12px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7), inset 0 0 60px rgba(120, 80, 30, 0.35);
   font-family: 'IM Fell English', Georgia, serif;
 }
 
@@ -186,34 +203,10 @@
   color: #7a1f1f;
 }
 
-@media (max-width: 600px) {
-  .historia__pergaminho {
-    padding: 2rem 1.25rem;
-  }
-
-  .historia__titulo {
-    font-size: 2rem;
-  }
-}
-
 .historia__titulo,
 .historia__secao-titulo,
 .historia__card-nome {
   font-family: inherit;
-}
-
-.historia__pergaminho {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-width: 960px;
-  padding: 3rem 2.5rem;
-  background: radial-gradient(ellipse at center, #f3e2b3 0%, #e7cf98 60%, #d2b177 100%);
-  color: #3a2616;
-  border: 6px double #8a5a24;
-  border-radius: 12px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7), inset 0 0 60px rgba(120, 80, 30, 0.35);
-  font-family: 'IM Fell English', Georgia, serif;
 }
 
   .historia__cabecalho,
@@ -271,4 +264,16 @@
   left: 5%;
   width: 225px;
   transform: rotate(-6deg);
+}
+
+/* Coloquei media no final pra n bugar */
+@media (max-width: 600px) {
+  .historia__pergaminho {
+    border-width: 100px 48px 100px 48px;
+    padding: 0.5rem;
+  }
+
+  .historia__titulo {
+    font-size: 2rem;
+  }
 }
