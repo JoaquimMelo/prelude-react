@@ -1,0 +1,253 @@
+.pagina-cartas {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pagina-cartas .footer-links {
+  flex-wrap: wrap;
+  gap: 20px 40px;
+}
+
+.cartas,
+.cartas * {
+  box-sizing: border-box;
+}
+
+.cartas {
+  flex: 1;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 28px 24px 64px;
+}
+
+.cartas__compendio {
+  border: solid transparent;
+  border-width: clamp(25px, 6vw, 74px) clamp(16px, 4vw, 56px);
+  border-image: url("../../assets/fundohistoria/pergaminhohistoria.png") 27% 15%
+    fill stretch round;
+  background: #f1dfb1 padding-box;
+}
+
+.cartas__introducao {
+  padding: 8px 12px 4px;
+  text-align: center;
+}
+
+.cartas__introducao h1 {
+  margin: 0;
+  color: #49301b;
+  font-family: "Pixelify Sans", monospace;
+  font-size: clamp(28px, 5vw, 44px);
+  text-wrap: balance;
+}
+
+.cartas__introducao::after {
+  content: "";
+  display: block;
+  width: min(65%, 260px);
+  height: 1px;
+  margin: 12px auto 0;
+  background: linear-gradient(90deg, transparent, #79502c, transparent);
+}
+
+.cartas__abas {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 12px 0;
+}
+
+.cartas__abas button {
+  min-width: 108px;
+  padding: 9px 16px;
+  border: 2px solid #a17b4c;
+  background: #e4c995;
+  color: #49301b;
+  font: inherit;
+  cursor: pointer;
+}
+
+.cartas__abas button[aria-pressed="true"] {
+  border-color: #79502c;
+  background: #4a2c19;
+  color: #f4df9d;
+}
+
+.cartas__pergaminho {
+  margin: 14px clamp(8px, 2vw, 28px) 0;
+  padding: 16px 0 12px;
+  border-top: 1px solid #a17b4c;
+}
+
+.cartas__filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.cartas__filtro {
+  display: grid;
+  flex: 1 1 152px;
+  max-width: 240px;
+  gap: 4px;
+}
+
+.cartas__filtro label {
+  color: #49301b;
+}
+
+.cartas__filtros select,
+.cartas__modal button {
+  min-height: 42px;
+  padding: 8px 12px;
+  border: 1px solid #a17b4c;
+  border-radius: 3px;
+  background: #fff3d4;
+  color: #49301b;
+  font: inherit;
+}
+
+.cartas__resultado {
+  margin: 16px 0 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #c09a65;
+  color: #63462e;
+}
+
+.cartas__secao {
+  margin-top: 22px;
+}
+
+.cartas__secao h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 16px;
+  color: #49301b;
+}
+
+.cartas__secao h2 span {
+  color: #8b4f26;
+}
+
+.cartas__secao h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, #a17b4c, transparent);
+}
+
+.cartas__grade {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(min(100%, clamp(112px, 14vw, 156px)), 1fr)
+  );
+  align-items: start;
+  gap: 18px 14px;
+}
+
+.cartas__carta {
+  width: 100%;
+  max-width: 176px;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  cursor: zoom-in;
+}
+
+.cartas__miniatura {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 7;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 3px #492c1a60);
+  transition: transform 160ms ease;
+}
+
+.cartas__carta:hover .cartas__miniatura,
+.cartas__carta:focus-visible .cartas__miniatura {
+  transform: translateY(-3px);
+}
+
+.cartas__nome,
+.cartas__legenda {
+  display: block;
+  margin-top: 4px;
+  color: #49301b;
+}
+
+.cartas__nome {
+  font-weight: bold;
+}
+
+.cartas__legenda {
+  color: #6b4a30;
+  font-size: 14px;
+}
+
+.cartas__modal {
+  width: min(440px, calc(100% - 24px));
+  max-height: calc(100% - 24px);
+  padding: 12px 16px 16px;
+  border: 3px solid #79502c;
+  background: #f1dfb1;
+  text-align: center;
+}
+
+.cartas__modal::backdrop {
+  background: #160e09cc;
+}
+
+.cartas__modal form {
+  margin-bottom: 8px;
+  text-align: right;
+}
+
+.cartas__modal button {
+  cursor: pointer;
+}
+
+.cartas__modal img {
+  display: block;
+  width: 100%;
+  max-height: 68vh;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.cartas__modal h2,
+.cartas__modal p {
+  margin: 6px 0 0;
+  color: #49301b;
+}
+
+.cartas :is(button, select):focus-visible {
+  outline: 2px solid #9e561f;
+  outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+  .pagina-cartas .home-botoes {
+    position: static;
+  }
+
+  .cartas {
+    padding: 20px 12px 48px;
+  }
+
+  .cartas__filtro {
+    max-width: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cartas__miniatura {
+    transition: none;
+  }
+}
