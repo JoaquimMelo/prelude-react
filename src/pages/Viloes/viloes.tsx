@@ -4,6 +4,7 @@ import Footer from '../../components/Footer/footer';
 import Grid from '../../components/Grids/grids';
 
 import './viloes.css';
+import vilaomolde from '../../assets/moldeheroivilao/vilaomolde.png';
 
 import soldadoesqueletico from '../../assets/FotosViloes/soldadoesqueletico.png';
 import arqueiro from '../../assets/FotosViloes/arqueiro.png';
@@ -77,10 +78,16 @@ export default function Viloes() {
     return (
         <>
             <Menu />
-
-            <div className="viloes-container">
-                <h1 className="herois-titulo">Vilões</h1>
-
+            
+<div className="viloes-container">
+                <div className="viloes-titulo-banner">
+    <img
+        src={vilaomolde}
+        alt=""
+        className="viloes-molde-imagem"
+    />
+    <h1 className="viloes-titulo">Vilões</h1>
+</div>
                 <Grid>
                     {viloes.map((vilao) => (
                         <div className="vilao-card" key={vilao.nome}>

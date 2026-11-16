@@ -11,6 +11,38 @@
     padding-top: 150px;
 }
 
+.viloes-titulo-banner {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 460px;
+    max-width: 90vw;
+    margin: 0 auto 60px;
+}
+
+.viloes-molde-imagem {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.75));
+}
+
+.viloes-titulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: "Pixelify Sans", monospace;
+    font-size: 40px;
+    font-weight: bold;
+    color: #2e1209;
+    text-shadow: 0 1px 0 rgba(255, 230, 200, 0.55);
+    white-space: nowrap;
+    pointer-events: none;
+}
+
 .vilao-preview {
     position: absolute;
     bottom: 88%;

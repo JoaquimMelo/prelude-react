@@ -5,6 +5,7 @@ import Footer from '../../components/Footer/footer';
 import Grid from '../../components/Grids/grids';
 
 import './herois.css';
+import heroimolde from '../../assets/moldeheroivilao/heroimolde.png';
 
 import cavaleiro from '../../assets/FotosHerois/cavaleiro.png';
 import ladino from '../../assets/FotosHerois/ladino.png';
@@ -84,8 +85,15 @@ export default function Herois() {
 
         
 
-        <div className="herois-container">
-            <h1 className="herois-titulo">Heróis</h1>
+       <div className="herois-container">
+            <div className="herois-titulo-banner">
+                <img
+                    src={heroimolde}
+                    alt=""
+                    className="herois-molde-imagem"
+                />
+                <h1 className="herois-titulo">Heróis</h1>
+            </div>
 
             <Grid>
                 {herois.map((heroi) => (
