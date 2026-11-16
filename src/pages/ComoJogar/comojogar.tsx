@@ -376,11 +376,20 @@ const folhas = [
   },
 ];
 
+/* INÍCIO DA ALTERAÇÃO: junta os 6 botões em 3 pares */
+const botoesIndice = [
+  { id: "objetivo-preparacao", numero: "01", nome: "Objetivo e Preparação" },
+  { id: "combate-cartas", numero: "02", nome: "Combate e Cartas" },
+  { id: "rotas-encontros", numero: "03", nome: "Rotas e Encontros" },
+];
+/* FIM DA ALTERAÇÃO */
+
 export default function ComoJogar() {
-  const [folhaSelecionada, setFolhaSelecionada] = useState(0);
-  const folhaAtual = folhas[folhaSelecionada];
-  const inicioDoPar = Math.floor(folhaSelecionada / 2) * 2;
+  /* INÍCIO DA ALTERAÇÃO: controle por par de folhas */
+  const [parSelecionado, setParSelecionado] = useState(0);
+  const inicioDoPar = parSelecionado * 2;
   const folhasDoPar = folhas.slice(inicioDoPar, inicioDoPar + 2);
+  /* FIM DA ALTERAÇÃO */
 
   return (
     <div className="pagina-como-jogar">
@@ -396,19 +405,21 @@ export default function ComoJogar() {
           <nav className="como-jogar__indice" aria-labelledby="titulo-indice">
             <h2 id="titulo-indice">Índice</h2>
 
-            {folhas.map((folha, indice) => (
+            {/* INÍCIO DA ALTERAÇÃO: usa botoesIndice (3 botões) */}
+            {botoesIndice.map((botao, indice) => (
               <button
-                key={folha.id}
+                key={botao.id}
                 type="button"
                 className="como-jogar__botao"
                 aria-controls="livro-como-jogar"
-                aria-pressed={folhaSelecionada === indice}
-                onClick={() => setFolhaSelecionada(indice)}
+                aria-pressed={parSelecionado === indice}
+                onClick={() => setParSelecionado(indice)}
               >
-                <span className="como-jogar__numero">{folha.numero}</span>
-                {folha.nome}
+                <span className="como-jogar__numero">{botao.numero}</span>
+                {botao.nome}
               </button>
             ))}
+            {/* FIM DA ALTERAÇÃO */}
           </nav>
 
           <div className="como-jogar__livro" id="livro-como-jogar">
@@ -420,7 +431,9 @@ export default function ComoJogar() {
                 romano={folha.romano}
                 numero={folha.numero}
                 rodape={folha.rodape}
-                ativa={folha.id === folhaAtual.id}
+                /* INÍCIO DA ALTERAÇÃO */
+                ativa={true}
+                /* FIM DA ALTERAÇÃO */
               >
                 {folha.conteudo}
               </FolhaComoJogar>
