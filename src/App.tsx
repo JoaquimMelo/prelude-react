@@ -8,6 +8,7 @@ import Historia from "./pages/Historia/historia.tsx";
 import ComoJogar from "./pages/ComoJogar/comojogar.tsx";
 import Comunidade from "./pages/Comunidade/comunidade.tsx";
 import SobreNos from "./pages/SobreNos/sobrenos";
+import Cartas from "./pages/Cartas/cartas.tsx";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
       <Route path="/comojogar" element={<ComoJogar />} />
       <Route path="/comunidade" element={<Comunidade />} />
       <Route path="/sobrenos" element={<SobreNos />} />
+      <Route path="/cartas" element={<Cartas />} />
     </Routes>
   );
 }

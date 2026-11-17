@@ -1,0 +1,386 @@
+[
+  {
+    "id": "espada-juramentada",
+    "nome": "Espada Juramentada",
+    "categoria": "Heróis",
+    "tipo": "Ataque",
+    "personagem": "Cavaleiro",
+    "imagem": "Herois/cavaleiro-insigth/espada_juramentada.png"
+  },
+  {
+    "id": "investida-com-escudo",
+    "nome": "Investida com Escudo",
+    "categoria": "Heróis",
+    "tipo": "Ataque",
+    "personagem": "Cavaleiro",
+    "imagem": "Herois/cavaleiro-insigth/investida_com_escudo.png"
+  },
+  {
+    "id": "machado-do-bastiao",
+    "nome": "Machado do Bastião",
+    "categoria": "Heróis",
+    "tipo": "Ataque",
+    "personagem": "Cavaleiro",
+    "imagem": "Herois/cavaleiro-insigth/machado_do_bastiao.png"
+  },
+  {
+    "id": "interposicao",
+    "nome": "Interposição",
+    "categoria": "Heróis",
+    "tipo": "Defesa",
+    "personagem": "Cavaleiro",
+    "imagem": "Herois/cavaleiro-insigth/interposição.png"
+  },
+  {
+    "id": "jurar-protecao",
+    "nome": "Jurar Proteção",
+    "categoria": "Heróis",
+    "tipo": "Defesa",
+    "personagem": "Cavaleiro",
+    "imagem": "Herois/cavaleiro-insigth/jurar_proteção.png"
+  },
+  {
+    "id": "muralha-de-ferro",
+    "nome": "Muralha de Ferro",
+    "categoria": "Heróis",
+    "tipo": "Defesa",
+    "personagem": "Cavaleiro",
+    "imagem": "Herois/cavaleiro-insigth/muralha_de_ferro.png"
+  },
+  {
+    "id": "ultimo-baluarte",
+    "nome": "Último Baluarte",
+    "categoria": "Heróis",
+    "tipo": "Especial",
+    "personagem": "Cavaleiro",
+    "imagem": "Herois/cavaleiro-insigth/ultimo_baluarde.png"
+  },
+  {
+    "id": "chakram-de-retorno",
+    "nome": "Chakram de Retorno",
+    "categoria": "Heróis",
+    "tipo": "Ataque",
+    "personagem": "Ladino",
+    "imagem": "Herois/ladino-vincent/Chakram_de_Retorno.png"
+  },
+  {
+    "id": "golpe-do-veu",
+    "nome": "Golpe do Véu",
+    "categoria": "Heróis",
+    "tipo": "Ataque",
+    "personagem": "Ladino",
+    "imagem": "Herois/ladino-vincent/Golpe_do_Veu.png"
+  },
+  {
+    "id": "lamina-khopesh",
+    "nome": "Lâmina Khopesh",
+    "categoria": "Heróis",
+    "tipo": "Ataque",
+    "personagem": "Ladino",
+    "imagem": "Herois/ladino-vincent/Lamina_Khopesh.png"
+  },
+  {
+    "id": "cortina-de-areia",
+    "nome": "Cortina de Areia",
+    "categoria": "Heróis",
+    "tipo": "Defesa",
+    "personagem": "Ladino",
+    "imagem": "Herois/ladino-vincent/Cortina_de_areia.png"
+  },
+  {
+    "id": "danca-da-lamina",
+    "nome": "Dança da Lâmina",
+    "categoria": "Heróis",
+    "tipo": "Defesa",
+    "personagem": "Ladino",
+    "imagem": "Herois/ladino-vincent/dança_da_lamina.png"
+  },
+  {
+    "id": "passo-na-sombra",
+    "nome": "Passo na Sombra",
+    "categoria": "Heróis",
+    "tipo": "Defesa",
+    "personagem": "Ladino",
+    "imagem": "Herois/ladino-vincent/passo_na_sombra.png"
+  },
+  {
+    "id": "bote-do-chacal",
+    "nome": "Bote do Chacal",
+    "categoria": "Heróis",
+    "tipo": "Especial",
+    "personagem": "Ladino",
+    "imagem": "Herois/ladino-vincent/Bote_do_chacal.png"
+  },
+  {
+    "id": "faisca-rubra",
+    "nome": "Faísca Rubra",
+    "categoria": "Heróis",
+    "tipo": "Ataque",
+    "personagem": "Mago",
+    "imagem": "Herois/mago-merovin/faisca_rubra.png"
+  },
+  {
+    "id": "marca-arcana",
+    "nome": "Marca Arcana",
+    "categoria": "Heróis",
+    "tipo": "Ataque",
+    "personagem": "Mago",
+    "imagem": "Herois/mago-merovin/marca_arcana.png"
+  },
+  {
+    "id": "bola-de-fogo",
+    "nome": "Bola de Fogo",
+    "categoria": "Heróis",
+    "tipo": "Ataque",
+    "personagem": "Mago",
+    "imagem": "Herois/mago-merovin/bola_de_fogo.png"
+  },
+  {
+    "id": "barreira-runica",
+    "nome": "Barreira Rúnica",
+    "categoria": "Heróis",
+    "tipo": "Defesa",
+    "personagem": "Mago",
+    "imagem": "Herois/mago-merovin/barreira_runica.png"
+  },
+  {
+    "id": "palavra-restauradora",
+    "nome": "Palavra Restauradora",
+    "categoria": "Heróis",
+    "tipo": "Defesa",
+    "personagem": "Mago",
+    "imagem": "Herois/mago-merovin/palavra_restauradora.png"
+  },
+  {
+    "id": "parede-de-gelo",
+    "nome": "Parede de Gelo",
+    "categoria": "Heróis",
+    "tipo": "Defesa",
+    "personagem": "Mago",
+    "imagem": "Herois/mago-merovin/parede_de_gelo.png"
+  },
+  {
+    "id": "eclipse-escarlate",
+    "nome": "Eclipse Escarlate",
+    "categoria": "Heróis",
+    "tipo": "Especial",
+    "personagem": "Mago",
+    "imagem": "Herois/mago-merovin/eclipse_escarlate.png"
+  },
+  {
+    "id": "corte-de-contrato",
+    "nome": "Corte de Contrato",
+    "categoria": "Heróis",
+    "tipo": "Ataque",
+    "personagem": "Mercenário",
+    "imagem": "Herois/mercenario-depay/corte_de_contrato.png"
+  },
+  {
+    "id": "lamina-rapida",
+    "nome": "Lâmina Rápida",
+    "categoria": "Heróis",
+    "tipo": "Ataque",
+    "personagem": "Mercenário",
+    "imagem": "Herois/mercenario-depay/lamina_rapida.png"
+  },
+  {
+    "id": "machado-de-batalha",
+    "nome": "Machado de Batalha",
+    "categoria": "Heróis",
+    "tipo": "Ataque",
+    "personagem": "Mercenário",
+    "imagem": "Herois/mercenario-depay/machado_de_batalha.png"
+  },
+  {
+    "id": "cobertura-paga",
+    "nome": "Cobertura Paga",
+    "categoria": "Heróis",
+    "tipo": "Defesa",
+    "personagem": "Mercenário",
+    "imagem": "Herois/mercenario-depay/cobertura_paga.png"
+  },
+  {
+    "id": "escudo-gasto",
+    "nome": "Escudo Gasto",
+    "categoria": "Heróis",
+    "tipo": "Defesa",
+    "personagem": "Mercenário",
+    "imagem": "Herois/mercenario-depay/escudo_gasto.png"
+  },
+  {
+    "id": "passo-calculado",
+    "nome": "Passo Calculado",
+    "categoria": "Heróis",
+    "tipo": "Defesa",
+    "personagem": "Mercenário",
+    "imagem": "Herois/mercenario-depay/passo_calculado.png"
+  },
+  {
+    "id": "preco-final",
+    "nome": "Preço Final",
+    "categoria": "Heróis",
+    "tipo": "Especial",
+    "personagem": "Mercenário",
+    "imagem": "Herois/mercenario-depay/preço_final.png"
+  },
+  {
+    "id": "corte-em-x",
+    "nome": "Corte em X",
+    "categoria": "Heróis",
+    "tipo": "Ataque",
+    "personagem": "Rei",
+    "imagem": "Herois/rei-lorkis/corte_em_x.png"
+  },
+  {
+    "id": "laminas-cruzadas",
+    "nome": "Lâminas Cruzadas",
+    "categoria": "Heróis",
+    "tipo": "Ataque",
+    "personagem": "Rei",
+    "imagem": "Herois/rei-lorkis/laminas_cruzadas.png"
+  },
+  {
+    "id": "ordem-de-avanco",
+    "nome": "Ordem de Avanço",
+    "categoria": "Heróis",
+    "tipo": "Ataque",
+    "personagem": "Rei",
+    "imagem": "Herois/rei-lorkis/ordem_de_avanço.png"
+  },
+  {
+    "id": "guarda-de-duas-laminas",
+    "nome": "Guarda de Duas Lâminas",
+    "categoria": "Heróis",
+    "tipo": "Defesa",
+    "personagem": "Rei",
+    "imagem": "Herois/rei-lorkis/Guarda_de_Duas_Laminas.png"
+  },
+  {
+    "id": "parada-do-soberano",
+    "nome": "Parada do Soberano",
+    "categoria": "Heróis",
+    "tipo": "Defesa",
+    "personagem": "Rei",
+    "imagem": "Herois/rei-lorkis/parada_do_soberano.png"
+  },
+  {
+    "id": "recuar-em-formacao",
+    "nome": "Recuar em Formação",
+    "categoria": "Heróis",
+    "tipo": "Defesa",
+    "personagem": "Rei",
+    "imagem": "Herois/rei-lorkis/recuar_em_formaçao.png"
+  },
+  {
+    "id": "decreto-do-rei",
+    "nome": "Decreto do Rei",
+    "categoria": "Heróis",
+    "tipo": "Especial",
+    "personagem": "Rei",
+    "imagem": "Herois/rei-lorkis/decreto_do_rei.png"
+  },
+  {
+    "id": "corte-do-fiorde",
+    "nome": "Corte do Fiorde",
+    "categoria": "Heróis",
+    "tipo": "Ataque",
+    "personagem": "Viking",
+    "imagem": "Herois/viking-gunnar/corte_do_fiorde.png"
+  },
+  {
+    "id": "flecha-de-caca",
+    "nome": "Flecha de Caça",
+    "categoria": "Heróis",
+    "tipo": "Ataque",
+    "personagem": "Viking",
+    "imagem": "Herois/viking-gunnar/flecha_de_caça.png"
+  },
+  {
+    "id": "quebra-escudo",
+    "nome": "Quebra-Escudo",
+    "categoria": "Heróis",
+    "tipo": "Ataque",
+    "personagem": "Viking",
+    "imagem": "Herois/viking-gunnar/quebra_escudo.png"
+  },
+  {
+    "id": "cobertura-viking",
+    "nome": "Cobertura Viking",
+    "categoria": "Heróis",
+    "tipo": "Defesa",
+    "personagem": "Viking",
+    "imagem": "Herois/viking-gunnar/cobertura_viking.png"
+  },
+  {
+    "id": "escudo-de-carvalho",
+    "nome": "Escudo de Carvalho",
+    "categoria": "Heróis",
+    "tipo": "Defesa",
+    "personagem": "Viking",
+    "imagem": "Herois/viking-gunnar/escudo_de_carvalho.png"
+  },
+  {
+    "id": "riposta-selvagem",
+    "nome": "Riposta Selvagem",
+    "categoria": "Heróis",
+    "tipo": "Defesa",
+    "personagem": "Viking",
+    "imagem": "Herois/viking-gunnar/riposta_selvagem.png"
+  },
+  {
+    "id": "furia-de-kaupang",
+    "nome": "Fúria de Kaupang",
+    "categoria": "Heróis",
+    "tipo": "Especial",
+    "personagem": "Viking",
+    "imagem": "Herois/viking-gunnar/furia_de_kaupang.png"
+  },
+  {
+    "id": "soco",
+    "nome": "Soco",
+    "categoria": "Comuns",
+    "tipo": "Ataque",
+    "personagem": "",
+    "imagem": "cartas de combate/soco.png"
+  },
+  {
+    "id": "golpe-simples",
+    "nome": "Golpe Simples",
+    "categoria": "Comuns",
+    "tipo": "Ataque",
+    "personagem": "",
+    "imagem": "cartas de combate/golpe_simples.png"
+  },
+  {
+    "id": "empurrao",
+    "nome": "Empurrão",
+    "categoria": "Comuns",
+    "tipo": "Ataque",
+    "personagem": "",
+    "imagem": "cartas de combate/empurrao.png"
+  },
+  {
+    "id": "bloqueio",
+    "nome": "Bloqueio",
+    "categoria": "Comuns",
+    "tipo": "Defesa",
+    "personagem": "",
+    "imagem": "cartas de combate/bloqueio.png"
+  },
+  {
+    "id": "cobertura",
+    "nome": "Cobertura",
+    "categoria": "Comuns",
+    "tipo": "Defesa",
+    "personagem": "",
+    "imagem": "cartas de combate/cobertura.png"
+  },
+  {
+    "id": "esquiva",
+    "nome": "Esquiva",
+    "categoria": "Comuns",
+    "tipo": "Defesa",
+    "personagem": "",
+    "imagem": "cartas de combate/esquiva.png"
+  }
+]

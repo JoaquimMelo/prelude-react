@@ -1,26 +1,31 @@
-import './linkImagem.css';
+import "./LinkImagem.css";
 
 interface LinkImagemProps {
-    href: string;
-    imagem: string;
-    nome: string;
-    descricao?: string;
+  href: string;
+  imagem: string;
+  nome: string;
+  descricao?: string;
 }
 
-export default function LinkImagem({ href, imagem, nome, descricao }: LinkImagemProps) {
-    const externo = href.startsWith('http');
+export default function LinkImagem({
+  href,
+  imagem,
+  nome,
+  descricao,
+}: LinkImagemProps) {
+  const externo = href.startsWith("http");
 
-    return (
-        <a
-            className="link-imagem"
-            href={href}
-            target={externo ? '_blank' : undefined}
-            rel={externo ? 'noopener noreferrer' : undefined}
-            aria-label={nome}
-        >
-            <img className="link-imagem-icone" src={imagem} alt="" />
-            <span className="link-imagem-nome">{nome}</span>
-            {descricao && <span className="link-imagem-descricao">{descricao}</span>}
-        </a>
-    );
+  return (
+    <a
+      className="link-imagem"
+      href={href}
+      target={externo ? "_blank" : undefined}
+      rel={externo ? "noopener noreferrer" : undefined}
+      aria-label={nome}
+    >
+      <img className="link-imagem-icone" src={imagem} alt="" />
+      <span className="link-imagem-nome">{nome}</span>
+      {descricao && <span className="link-imagem-descricao">{descricao}</span>}
+    </a>
+  );
 }

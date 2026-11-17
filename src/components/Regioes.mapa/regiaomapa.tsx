@@ -1,3 +1,4 @@
+import { useRef, useState } from "react";
 import "./regiaomapa.css";
 
 // componente que esepra receber uma prop chamada regiao com 6 campos: nome, numero, descricao, trilha, campo e mecanica
@@ -13,6 +14,19 @@ interface RegiaoMapaProps {
 }
 
 export default function RegiaoMapa({ regiao }: RegiaoMapaProps) {
+  const [imagemAmpliada, setImagemAmpliada] = useState<{
+    src: string;
+    alt: string;
+  } | null>(null);
+  const dialogo = useRef<HTMLDialogElement>(null);
+  const descricaoTrilha = `trilha de ${regiao.nome}`;
+  const descricaoCampo = `campo de batalha de ${regiao.nome}`;
+
+  function ampliarImagem(src: string, alt: string) {
+    setImagemAmpliada({ src, alt });
+    dialogo.current?.showModal();
+  }
+
   return (
     <section className="regiao" aria-labelledby="titulo-regiao">
       <header className="regiao__cabecalho">
@@ -35,11 +49,16 @@ export default function RegiaoMapa({ regiao }: RegiaoMapaProps) {
             Trilha
           </h3>
           <p className="regiao__mapa-subtitulo">O caminho pela região</p>
-          <img
-            className="regiao__imagem"
-            src={regiao.trilha}
-            alt={"Trilha: " + regiao.nome}
-          />
+          <button
+            className="regiao__ampliar"
+            type="button"
+            aria-label={`Ampliar ${descricaoTrilha}`}
+            aria-haspopup="dialog"
+            onClick={() => ampliarImagem(regiao.trilha, descricaoTrilha)}
+          >
+            <img className="regiao__imagem" src={regiao.trilha} alt="" />
+            <span className="regiao__ampliar-rotulo">Ampliar</span>
+          </button>
           <figcaption className="regiao__legenda">
             Prévia das rotas e dos encontros.
           </figcaption>
@@ -53,11 +72,16 @@ export default function RegiaoMapa({ regiao }: RegiaoMapaProps) {
             Campo de batalha
           </h3>
           <p className="regiao__mapa-subtitulo">O cenário dos confrontos</p>
-          <img
-            className="regiao__imagem"
-            src={regiao.campo}
-            alt={"Campo de batalha: " + regiao.nome}
-          />
+          <button
+            className="regiao__ampliar"
+            type="button"
+            aria-label={`Ampliar ${descricaoCampo}`}
+            aria-haspopup="dialog"
+            onClick={() => ampliarImagem(regiao.campo, descricaoCampo)}
+          >
+            <img className="regiao__imagem" src={regiao.campo} alt="" />
+            <span className="regiao__ampliar-rotulo">Ampliar</span>
+          </button>
           <figcaption className="regiao__legenda">
             Prévia do tabuleiro desta região.
           </figcaption>
@@ -68,6 +92,30 @@ export default function RegiaoMapa({ regiao }: RegiaoMapaProps) {
         <h3 className="regiao__mecanica-titulo">Mecânica da região</h3>
         <p className="regiao__mecanica-texto">{regiao.mecanica}</p>
       </div>
+
+      <dialog
+        className="regiao__modal"
+        ref={dialogo}
+        aria-label="Imagem ampliada"
+        onClose={() => setImagemAmpliada(null)}
+        onClick={(evento) => {
+          if (evento.target === evento.currentTarget)
+            evento.currentTarget.close();
+        }}
+      >
+        <form method="dialog">
+          <button className="regiao__fechar" type="submit">
+            Fechar
+          </button>
+        </form>
+        {imagemAmpliada && (
+          <img
+            className="regiao__imagem-ampliada"
+            src={imagemAmpliada.src}
+            alt={imagemAmpliada.alt}
+          />
+        )}
+      </dialog>
     </section>
   );
 }

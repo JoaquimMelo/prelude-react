@@ -96,6 +96,76 @@
   line-height: 1.4;
 }
 
+/* Ampliação das imagens */
+
+.regiao__ampliar {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  cursor: zoom-in;
+}
+
+.regiao__ampliar:hover .regiao__imagem {
+  border-color: #d4af37;
+}
+
+.regiao__ampliar-rotulo,
+.regiao__fechar {
+  border: 1px solid #a17b4c;
+  background: #1c1410;
+  color: #f4df9d;
+}
+
+.regiao__ampliar-rotulo {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.regiao__ampliar:focus-visible,
+.regiao__fechar:focus-visible {
+  outline: 2px solid #f4df9d;
+  outline-offset: 3px;
+}
+
+.regiao__modal {
+  max-width: calc(100vw - 32px);
+  max-height: calc(100dvh - 32px);
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.regiao__modal::backdrop {
+  background: #100b08e6;
+}
+
+.regiao__modal form {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+.regiao__fechar {
+  min-height: 44px;
+  padding: 8px 12px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.regiao__imagem-ampliada {
+  display: block;
+  max-width: min(1480px, calc(100vw - 32px));
+  max-height: calc(100dvh - 84px);
+  image-rendering: pixelated;
+}
+
 /* Mecânica da região */
 
 .regiao__mecanica {
