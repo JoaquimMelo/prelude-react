@@ -24,7 +24,7 @@
   /* ALTERADO: substituído o fundo/borda CSS pela imagem fatiada do pergaminho em pixel art */
   border-style: solid;
   border-width: 205px 155px 205px 155px;
-  border-image-source: url('../../assets/fundohistoria/pergaminhohistoria.png');
+  border-image-source: url('../../pergaminhohistoria.png');
   border-image-slice: 27% 15% 27% 15% fill;
   border-image-repeat: round;
   image-rendering: pixelated;
